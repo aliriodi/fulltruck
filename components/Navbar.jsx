@@ -27,11 +27,25 @@ const Navbar = () => {
 
       {/* Menú desplegable en mobile */}
       {open && (
-        <ul className="md:hidden mt-2 space-y-2 px-2">
-          <li><a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">Inicio</a></li>
-          <li><a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">Servicios</a></li>
-          <li><a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">Contacto</a></li>
+        <div className="absolute top-12 right-2 z-50 bg-slate-300 border border-slate-400 shadow-xl rounded-md p-4 w-fit">
+        <ul className="md:hidden space-y-2">
+          <li>
+            <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+              Servicios
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+              Contacto
+            </a>
+          </li>
         </ul>
+      </div>
       )}
     </nav>
   );
