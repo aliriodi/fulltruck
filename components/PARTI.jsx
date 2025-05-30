@@ -17,7 +17,7 @@ const BannerCamion = () => {
         {/* Imagen del camión */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
-            src="/camion.png"
+            src="https://res.cloudinary.com/dvy9qircy/image/upload/v1748603555/forex/forex_academy_professional_camiones1-shiva.jpg"
             alt="Camión de repuestos"
             className="w-60 md:w-72 h-auto object-contain"
           />

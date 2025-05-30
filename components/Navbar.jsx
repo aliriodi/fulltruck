@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="bg-slate-300 text-green-950 fixed top-0 w-full z-50 p-4 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">Mi Sitio</div>
-        <img src="./public/ico.jpeg" alt="Logo" className="h-10 w-auto" />
+        <img src="https://res.cloudinary.com/dvy9qircy/image/upload/v1748603385/forex/forex_academy_professional_logo2-shiva.png" alt="Logo" className="h-20 w-auto" />
 
         {/* Botón hamburguesa */}
         <div className="md:hidden">
