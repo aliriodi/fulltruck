@@ -27,7 +27,7 @@ const Navbar = () => {
 
       {/* Menú desplegable en mobile */}
       {open && (
-        <div className="absolute top-full right-4 z-50 bg-slate-300 shadow-md rounded-md p-4 w-fit">
+        <div className="absolute top-12 right-2 z-50 bg-slate-300 border border-slate-400 shadow-xl rounded-md p-4 w-fit">
         <ul className="md:hidden space-y-2">
           <li>
             <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
