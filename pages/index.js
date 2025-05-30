@@ -23,12 +23,14 @@ export default function Home() {
       </Head>
       <Navbar />
       <div
-        className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+        className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
       >
+
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <Whatssapp />
-          <PARTI />
-
+          <div className="pr-6">
+            <PARTI />
+          </div>
         </main>
       </div>
     </div>
