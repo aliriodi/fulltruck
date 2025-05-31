@@ -60,13 +60,13 @@ const CardSlider = () => {
       {/* Flechas */}
       <button
         onClick={prevCard}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-green-800 p-2 rounded-full shadow hover:bg-green-200"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-green-800 p-2 rounded-full shadow hover:bg-gray-200"
       >
         <ArrowLeft size={20} />
       </button>
       <button
         onClick={nextCard}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-green-800 p-2 rounded-full shadow hover:bg-green-200"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-green-800 p-2 rounded-full shadow hover:bg-gray-200"
       >
         <ArrowRight size={20} />
       </button>

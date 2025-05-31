@@ -85,3 +85,17 @@ footer .footer-data{
   }
 }
 /*////////// End Footer //////////*/
+/*/////////Componente SLIDER /////*/
+@keyframes backgroundMove {
+  0% {
+    background-position: 1000px 0;
+  }
+  100% {
+    background-position: 000 0;
+  }
+}
+
+.animate-backgroundMove {
+  animation: backgroundMove 30s linear infinite;
+}
+/*/////////end componente Slider//////*/
