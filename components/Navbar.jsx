@@ -7,7 +7,8 @@ const Navbar = () => {
   return (
     <nav className="bg-slate-300 text-green-950 fixed top-0 w-full z-50 p-4 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">Mi Sitio</div>
+        {/* <div className="text-2xl font-bold">Mi Sitio</div> */}
+        <div></div>
         <img src="https://res.cloudinary.com/dvy9qircy/image/upload/v1748603385/forex/forex_academy_professional_logo2-shiva.png" alt="Logo" className="h-20 w-auto" />
 
         {/* Botón hamburguesa */}
@@ -18,10 +19,10 @@ const Navbar = () => {
         </div>
 
         {/* Enlaces para pantallas grandes */}
-        <ul className="hidden md:flex  justify-center space-x-6">
-          <li><a href="#" className="hover:text-green-700">Inicio</a></li>
-          <li><a href="#" className="hover:text-green-700">Servicios</a></li>
-          <li><a href="#" className="hover:text-green-700">Contacto</a></li>
+        <ul className="hidden md:flex  justify-center space-x-6 pr-20">
+          <li><a href="#Inicio" className="hover:text-green-700">Inicio</a></li>
+          <li><a href="#Servicios" className="hover:text-green-700">Servicios</a></li>
+          <li><a href="#Contacto" className="hover:text-green-700">Contacto</a></li>
         </ul>
       </div>
 
@@ -30,17 +31,17 @@ const Navbar = () => {
         <div className="absolute top-12 right-2 z-50 bg-slate-300 border border-slate-400 shadow-xl rounded-md p-4 w-fit">
         <ul className="md:hidden space-y-2">
           <li>
-            <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+            <a href="#Inicio" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Inicio
             </a>
           </li>
           <li>
-            <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+            <a href="#Servicios" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Servicios
             </a>
           </li>
           <li>
-            <a href="#" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+            <a href="#Contacto" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Contacto
             </a>
           </li>

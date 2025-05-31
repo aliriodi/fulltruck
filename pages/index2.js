@@ -2,6 +2,9 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Whatssapp from "@/components/Whatssapp";
 import PARTI from "@/components/PARTI";
+import CARD3 from "@/components/Card3";
+import CardSlider from "@/components/CardSlider";
+import Footer from "@/components/Footer";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 
@@ -28,8 +31,12 @@ export default function Home() {
 
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <Whatssapp />
-          <div className="pr-6">
+          <div id='Inicio' className="pr-6">
             <PARTI />
+            <CARD3 />
+            <CardSlider />
+            <div className="bg-green-800">
+            <Footer  /></div>
           </div>
         </main>
       </div>
