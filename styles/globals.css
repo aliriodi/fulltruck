@@ -49,7 +49,7 @@ footer .footer-data{
 }
 .footer-data_item p{
   font-weight: 100;
-  display: flex;
+  display: block;
   align-items: center;
 }
 .footer-data_item .social{

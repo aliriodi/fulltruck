@@ -23,9 +23,9 @@ const movileImg = 'null';
         <h3> Nosotros </h3>
         <div className="footer-data_item">
           <p>
-            3DSeller es una empresa con alto compromiso con los clientes y con
-            la capacidad tecnica necesaria para poder hacer sus necesidades
-            realidad sin importar la complejidad de su diseño
+          En <b>Shiva Truck Parts</b> ofrecemos repuestos de 
+          calidad para camiones de todas las marcas. Stock confiable, envío 
+          rápido y asesoramiento experto. ¡Tu camión no se detiene, nosotros tampoco!
           </p>
         </div>
       </div>
@@ -35,20 +35,20 @@ const movileImg = 'null';
         <h3> Contacto </h3>
         <div className="footer-data_item">
           {/* <Image src={emailImg} alt="Email" /> */}
-          <Link href={"mailto: threedseller@gmail.com"} legacyBehavior> 
-          <a >threedseller@gmail.com</a>
+          <Link href={"mailto: shivatruckparts@gmail.com"} legacyBehavior> 
+          <a >shivatruckparts@gmail.com</a>
           </Link>
         </div>
         <div className="footer-data_item">
           {/* <Image src={movileImg} alt="Movil" /> */}
-          <a >+543516132710</a>
+          <a >+5492966382695</a>
         </div>
         <div className="footer-data_item">
           {/* <Image src={locationImg} alt="Ubicacion" /> */}
           <p>
             Argentina - Cordoba Capital 
             <br />
-            Calle Juan B. Justo 4852
+            Calle Juan B. Justo 4874
           </p>
         </div>
       </div>
