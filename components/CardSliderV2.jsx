@@ -64,9 +64,10 @@ const CardSlider = () => {
       </div>
 
       {/* Flechas */}
+      <div className="hidden md:block sm:block">
       <button
         onClick={prevCard}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-green-800 text-white p-2 rounded-full shadow hover:bg-green-600 z-20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-green-800 text-white p-2 rounded-full shadow hover:bg-green-600 z-20 "
       >
         <ArrowLeft size={20} />
       </button>
@@ -76,6 +77,7 @@ const CardSlider = () => {
       >
         <ArrowRight size={20} />
       </button>
+      </div>
     </div>
   );
 };
