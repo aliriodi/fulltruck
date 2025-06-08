@@ -20,9 +20,10 @@ const Navbar = () => {
 
         {/* Enlaces para pantallas grandes */}
         <ul className="hidden md:flex  justify-center space-x-6 pr-20">
-          <li><a href="#Inicio" className="hover:text-green-700">Inicio</a></li>
-          <li><a href="#Servicios" className="hover:text-green-700">Servicios</a></li>
-          <li><a href="#Contacto" className="hover:text-green-700">Contacto</a></li>
+          <li><a href="/#Inicio" className="hover:text-green-700">Inicio</a></li>
+          <li><a href="/products" className="hover:text-green-700">Catalogo</a></li>
+          <li><a href="/#Servicios" className="hover:text-green-700">Servicios</a></li>
+          <li><a href="/#Contacto" className="hover:text-green-700">Contacto</a></li>
         </ul>
       </div>
 
@@ -31,17 +32,22 @@ const Navbar = () => {
         <div className="absolute top-16 right-2 z-50 bg-slate-300 border border-slate-400 shadow-xl rounded-md p-4 w-fit">
         <ul className="md:hidden space-y-2">
           <li>
-            <a href="#Inicio" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+            <a href="/#Inicio" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Inicio
             </a>
           </li>
           <li>
-            <a href="#Servicios" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+            <a href="/products" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+              Catalogo
+            </a>
+          </li>
+          <li>
+            <a href="/#Servicios" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Servicios
             </a>
           </li>
           <li>
-            <a href="#Contacto" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+            <a href="/#Contacto" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Contacto
             </a>
           </li>

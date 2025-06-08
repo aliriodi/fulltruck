@@ -1,0 +1,70 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "title": "card1",
+            "description": "description card1",
+            "image": [
+                "url1",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "description CardDetail1",
+            "brand": "Marca1",
+            "clasification": [
+                "clasificacion I",
+                "clasificacion II"
+            ],
+            "model": ""
+        },
+        {
+            "id": 2,
+            "title": "card2",
+            "description": "description card2",
+            "image": [
+                "url1",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "description CardDetail2",
+            "brand": "Marca2",
+            "clasification": [
+                "clasificacion I",
+                "clasificacion II"
+            ],
+            "model": ""
+        },
+        {
+            "id": 3,
+            "title": "card3",
+            "description": "description card3",
+            "image": [
+                "url1",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "description CardDetail3",
+            "brand": "Marca2",
+            "clasification": [
+                "clasificacion I",
+                "clasificacion II"
+            ],
+            "model": ""
+        }
+    ],
+    "brands": [
+        {"text":"Cummins","image":"url"},
+        {"text":"Ford","image":"url"},
+        {"text":"Iveco","image":"url"},
+        {"text":"Mercedes Benz","image":"url"},
+        {"text":"Renault","image":"url"},
+        {"text":"Scania","image":"url"},
+        {"text":"Volkswagen","image":"url"},
+        {"text":"Volvo","image":"url"}
+    ],
+    "clasification":[
+        "clasificacion I",
+        "clasificacion II",
+        "clasificacion III"
+    ]
+}
