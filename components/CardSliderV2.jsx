@@ -6,18 +6,21 @@ const cards = [
     id: 1,
     title: "Calidad Garantizada:",
     image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748722749/forex/forex_academy_professional_100QAv2.jpg",
+    image2:"https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto2.jpg",
     description: "Trabajamos con los mejores fabricantes para asegurarnos de que obtengas solo lo mejor.",
   },
   {
     id: 2,
     title: "Asesoría Especializada:",
     image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748721630/forex/forex_academy_professional_camion2-shiva.jpg",
+    image2:"https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto1.jpg",
     description: "Nuestro equipo de expertos está listo para ayudarte a encontrar la pieza perfecta para tus necesidades.",
   },
   {
     id: "Servicios",
     title: "Precios Competitivos:",
     image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748723280/forex/forex_academy_professional_precioscompetitivos.jpg",
+    image2:"https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto3.jpg",
     description: "Ofrecemos los mejores precios del mercado.",
   },
 ];
@@ -46,7 +49,8 @@ const CardSlider = () => {
         style={{ backgroundImage: 
             
             // `url('${cards[current].image}')` 
-            `url('https://res.cloudinary.com/dvy9qircy/image/upload/v1748721630/forex/forex_academy_professional_camion2-shiva.jpg')`
+            //`url('https://res.cloudinary.com/dvy9qircy/image/upload/v1748721630/forex/forex_academy_professional_camion2-shiva.jpg')`
+            `url('https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto1.jpg')`
         }}
       />
 
