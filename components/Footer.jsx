@@ -57,7 +57,7 @@ const movileImg = 'null';
       <div id='Contacto' className="footer-data">
         <h3> Redes sociales </h3>
         <div id='facebook' className="">
-        <a  href='#facebook' className="flex items-center space-x-2">
+        <a  href='https://www.facebook.com/shivatruck.parts.1/' className="flex items-center space-x-2">
          
             <AiFillFacebook />
            <span> Facebook</span>
@@ -65,29 +65,30 @@ const movileImg = 'null';
           </a>
         </div>
         <div className="">
-        <a  href='#facebook' className="flex items-center space-x-2">
+        <a  href='https://www.instagram.com/shivacamiones/facebook
+        ' className="flex items-center space-x-2">
          
             <AiFillInstagram />
            <span> Instagram</span>
          
           </a>
         </div>
-        <div className="">
+        {/* <div className="">
         <a  href='#facebook' className="flex items-center space-x-2">
          
             <AiFillLinkedin />
             <span>Linkedin</span>
          
           </a>
-        </div>
-        <div className="">
+        </div> */}
+        {/* <div className="">
         <a  href='#facebook' className="flex items-center space-x-2">
          
             <AiFillTwitterCircle />
            <span> Twitter</span>
          
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Copyright */}
