@@ -17,6 +17,7 @@ const Navbar = () => {
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
+        {console.log('linea 20 NAVBAR')}
         {console.log('https://centro-diesel.com/')}
         {/* Enlaces para pantallas grandes */}
         <ul className="hidden md:flex  justify-center space-x-6 pr-20">
