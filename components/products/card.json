@@ -12,7 +12,7 @@
             "cardDetail": "description CardDetail1",
             "brand": "Ford",
             "clasification": [
-                "clasificacion I",
+                "clasificacion IV",
                 "clasificacion II"
             ],
             "model": ""
@@ -29,7 +29,7 @@
             "cardDetail": "description CardDetail1",
             "brand": "Ford",
             "clasification": [
-                "clasificacion I",
+                "clasificacion V",
                 "clasificacion III"
             ],
             "model": ""
