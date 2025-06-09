@@ -63,7 +63,7 @@ function Index() {
               <a href={router.asPath+'/'+class2}>{class2}</a>
               
               {/* <p>{router.pathname}</p> */}
-              <p>{router.asPath}</p>
+              {/* <p>{router.asPath}</p> */}
             </div>)
             }
           </div> 
