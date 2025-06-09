@@ -12,7 +12,7 @@ const cards = [
   {
     id: 2,
     title: "Asesoría Especializada:",
-    image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748721630/forex/forex_academy_professional_camion2-shiva.jpg",
+    image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749506125/forex/forex_academy_professional_whatrsapp2-v3.png",
     image2:"https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto1.jpg",
     description: "Nuestro equipo de expertos está listo para ayudarte a encontrar la pieza perfecta para tus necesidades.",
   },
