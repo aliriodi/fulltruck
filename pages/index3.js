@@ -24,6 +24,10 @@ const geistMono = Geist_Mono({
 export default function Home() {
 
   const [powerOn, setPowerOn] = useState(false);
+  const whatsappNumbers = [
+    '+54 9 2966382695',
+    '+54 9 3512791785'
+  ];
 
   return (
     <div className="bg-gray-300">
@@ -37,9 +41,11 @@ export default function Home() {
 
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <Whatssapp />
-          <Prueba/>
-          <div id='Inicio' className="pr-6">
-          <div className="pt-16"></div>
+        
+          <div id='Inicio' className="pr-6"> 
+          <div className="pt-16"> </div>
+          <Prueba numbers={whatsappNumbers}/>
+          <div className="pt-16"> </div>
             <CardSliderV2 />
             <PARTI />
             <CARD3 />
