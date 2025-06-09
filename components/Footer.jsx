@@ -41,8 +41,13 @@ const movileImg = 'null';
         </div>
         <div className="footer-data_item">
           {/* <Image src={movileImg} alt="Movil" /> */}
-          <a >+5492966382695</a>
+          <a >+5492966382695</a> 
         </div>
+        <div className="footer-data_item">
+          {/* <Image src={movileImg} alt="Movil" /> */}
+          <a >+5493512791785</a>
+        </div>
+        
         <div className="footer-data_item">
           {/* <Image src={locationImg} alt="Ubicacion" /> */}
           <p>
