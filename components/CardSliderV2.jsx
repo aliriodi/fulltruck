@@ -19,7 +19,7 @@ const cards = [
   {
     id: "Servicios",
     title: "Precios Competitivos:",
-    image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748723280/forex/forex_academy_professional_precioscompetitivos.jpg",
+    image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749507507/forex/forex_academy_professional_PreciosCompetitivosv2.jpg",
     image2:"https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto3.jpg",
     description: "Ofrecemos los mejores precios del mercado.",
   },
