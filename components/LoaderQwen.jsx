@@ -4,7 +4,7 @@ import React from 'react';
 export default function LoaderTruck() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh]">
-      <h2 className="text-xl font-semibold mb-4">Cargando...</h2>
+      {/* <h2 className="text-xl font-semibold mb-4">Cargando...</h2> */}
 
       {/* Contenedor de la imagen con animación */}
       <div className="animate-spin-custom relative w-32 h-32">
@@ -15,7 +15,7 @@ export default function LoaderTruck() {
         />
       </div>
 
-      <p className="mt-4 text-gray-500">Por favor espere...</p>
+      {/* <p className="mt-4 text-gray-500">Por favor espere...</p> */}
     </div>
   );
 }

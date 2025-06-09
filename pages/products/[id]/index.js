@@ -36,7 +36,7 @@ function Index() {
         ];
         setClasification(uniqueClasifications)
         setLoading(false);
-      }, 1000);
+      }, 1900);
     };
 
     fetchData();
