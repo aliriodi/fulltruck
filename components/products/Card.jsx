@@ -36,7 +36,7 @@ function Card() {
             href={'/products/'+card.text}
             className="inline-block mt-2 hover:underline"
           >
-          <img src={card.image} alt={card.text} className="w-full h-40 object-cover rounded" />
+          <img src={card.image} alt={card.text} className="w-auto h-40 object-cover rounded" />
           <h2 className="text-xl font-bold mt-2">{card.text}</h2>
           
           <p className="text-gray-700">{card.description}</p>
