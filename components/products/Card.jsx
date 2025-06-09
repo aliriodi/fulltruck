@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Head from "next/head";
+import data from './card.json';
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -28,7 +29,23 @@ function Card() {
                 <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 
                     <div className='pt-12 text-black'>
-
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {data.brands.map((card,index) => (
+        <div key={index} className="border rounded-xl p-4 shadow-md">
+            <a
+            href={'/products/'+card.text}
+            className="inline-block mt-2 hover:underline"
+          >
+          <img src={card.image} alt={card.text} className="w-full h-40 object-cover rounded" />
+          <h2 className="text-xl font-bold mt-2">{card.text}</h2>
+          
+          <p className="text-gray-700">{card.description}</p>
+          
+            {/* Ver más */}
+          </a>
+        </div>
+      ))}
+    </div>
                     </div>
                     <div className="bg-green-800">
                         <Footer /></div>
