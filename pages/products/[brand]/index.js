@@ -6,7 +6,7 @@ import cards from '../../../components/products/card.json';
 
 function Index() {
   const router = useRouter();
-  const { id } = router.query;
+  const { brand } = router.query;
 
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
@@ -14,7 +14,7 @@ function Index() {
 
   // Simulamos la carga de datos
   useEffect(() => {
-    if (!id) return; // Si no hay id, no hacer nada
+    if (!brand) return; // Si no hay id, no hacer nada
 
     const fetchData = async () => {
       setLoading(true);
@@ -25,7 +25,7 @@ function Index() {
 
       // Simulación:
       setTimeout(() => {
-        const filtered = cards.cards.filter(card => card.brand === id);
+        const filtered = cards.cards.filter(card => card.brand === brand);
         //setData({ id, name: `Item ${id}` });
         setData(filtered)
         const uniqueClasifications = [
@@ -40,7 +40,7 @@ function Index() {
     };
 
     fetchData();
-  }, [id]);
+  }, [brand]);
 
   return (
     <Layout1>
