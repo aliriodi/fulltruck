@@ -1,6 +1,23 @@
 {
     "cards": [
         {
+            "id": 0,
+            "title": "card1",
+            "description": "description card1",
+            "image": [
+                "url1",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "description CardDetail1",
+            "brand": "Ford",
+            "clasification": [
+                "clasificacion I",
+                "clasificacion II"
+            ],
+            "model": ""
+        },
+        {
             "id": 1,
             "title": "card1",
             "description": "description card1",
@@ -10,10 +27,10 @@
             ],
             "alt": "url",
             "cardDetail": "description CardDetail1",
-            "brand": "Marca1",
+            "brand": "Ford",
             "clasification": [
                 "clasificacion I",
-                "clasificacion II"
+                "clasificacion III"
             ],
             "model": ""
         },
@@ -27,7 +44,7 @@
             ],
             "alt": "url",
             "cardDetail": "description CardDetail2",
-            "brand": "Marca2",
+            "brand": "Iveco",
             "clasification": [
                 "clasificacion I",
                 "clasificacion II"
