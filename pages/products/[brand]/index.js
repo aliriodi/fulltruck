@@ -30,7 +30,7 @@ function Index() {
         setData(filtered)
         const uniqueClasifications = [
           ...new Set(
-             filtered          
+            filtered
               .flatMap(card => card.clasification)
           )
         ];
@@ -51,26 +51,35 @@ function Index() {
             <LoaderTruck />
           </div>
         ) :
-              /* Segmento donde mapeo las cards si existe almenos 1 */ 
+          /* Segmento donde mapeo las cards si existe almenos 1 */
           data && data[0] ? <div>
 
             {/* <h1>Detalle del Item</h1>
             <p>ID: {data[0].id}</p>
             <p>Nombre: {data[0].title}</p> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {clasification?.map((class2, index) =>
 
-            {clasification?.map((class2,index) =>
-            <div  key={index}>
-              <a href={router.asPath+'/'+class2}>{class2}</a>
-              
-              {/* <p>{router.pathname}</p> */}
-              {/* <p>{router.asPath}</p> */}
-            </div>)
-            }
-          </div> 
-           
-           :
-             /**  Si no existe ninguna Card Mapeo esta */
-           <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
+                <div key={index} className="border rounded-xl p-4 shadow-md">
+                  <a
+                    href={router.asPath + '/' + class2}
+                    className="inline-block mt-2 hover:underline"
+                  >
+                    <img src={class2.image} alt={class2} className="w-auto h-40 object-cover rounded" />
+                    <h2 className="text-xl font-bold mt-2">{class2}</h2>
+
+
+                    {/* Ver más */}
+                  </a>
+                </div>
+              )
+              }
+            </div>
+          </div>
+
+            :
+            /**  Si no existe ninguna Card Mapeo esta */
+            <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
               No existen productos
             </div>}
 
