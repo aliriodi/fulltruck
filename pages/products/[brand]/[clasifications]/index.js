@@ -6,7 +6,7 @@ import cards from '../../../../components/products/card.json';
 
 export default function Curso() {
   const router = useRouter();
-  const {brand, clasifications } = router.query;
+  const {brand, clasifications , product} = router.query;
   const [card, setCard] = useState(null);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
@@ -32,7 +32,7 @@ export default function Curso() {
 
       // Simulación:
       setTimeout(() => {
-        const filtered = cards.cards.filter(card => card.brand === brand && card.clasification.includes(clasifications));
+        const filtered = cards.cards.filter(card => card.brand === brand && card.clasification.includes(clasifications) );
         //setData({ id, name: `Item ${id}` });
         
         setData(filtered)
