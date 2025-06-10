@@ -87,9 +87,9 @@
         }
     ],
     "brands": [
-        {"text":"Cummins","image":"url"},
-        {"text":"Ford","image":"url"},
-        {"text":"Iveco","image":"url"},
+        {"text":"Cummins","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749588241/forex/forex_academy_professional_cummins.jpg"},
+        {"text":"Ford","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749588289/forex/forex_academy_professional_ford.jpg"},
+        {"text":"Iveco","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749588645/forex/forex_academy_professional_Iveco.jpg"},
         {"text":"Mercedes Benz","image":"url"},
         {"text":"Renault","image":"url"},
         {"text":"Scania","image":"url"},
