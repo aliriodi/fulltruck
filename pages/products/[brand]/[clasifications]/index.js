@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Layout1 from '@/components/Layout1'
+import LoaderTruck from '@/components/LoaderQwen'
 import cards from '../../../../components/products/card.json';
 
 export default function Curso() {
@@ -87,7 +88,7 @@ export default function Curso() {
 :
 /**  Si no existe ninguna Card Mapeo esta */
 <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
-  No existen productos
+<LoaderTruck />
 </div>}
 
       </Layout1>
