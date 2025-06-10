@@ -67,6 +67,23 @@
                 "clasificacion II"
             ],
             "model": ""
+        },
+        {
+            "id": 4,
+            "title": "card4",
+            "description": "description card4",
+            "image": [
+                "url1",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "Description CardDetail4",
+            "brand": "Ford",
+            "clasification": [
+                "Bombas Agua",
+                "Mecanica"
+            ],
+            "model": ""
         }
     ],
     "brands": [
