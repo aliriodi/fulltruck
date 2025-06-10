@@ -26,22 +26,21 @@ function Card() {
             <div
                 className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
             >
-                <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+                <main className="flex flex-col gap-[32px] row-start-2 items-center  sm:items-start">
 
-                    <div className='pt-12 text-black'>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className='pt-12 mx-auto text-black'>
+                    <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 w-full ">
+
                             {data.brands.map((card, index) => (
-                                <div key={index} className="border bg-white rounded-xl p-4 shadow-md">
+                                <div key={index} className="  rounded-xl p-4 shadow-md transition duration-300 hover:border-green-300 hover:bg-green-300 mx-auto">
                                     <a
                                         href={'/products/' + card.text}
                                         className="inline-block mt-2 hover:underline"
                                     >
-                                        <img src={card.image} alt={card.text} className="w-auto h-40 object-cover rounded" />
-                                        <h2 className="text-xl font-bold mt-2">{card.text}</h2>
+                                        <img src={card.image} alt={card.text}  className="w-auto h-40 object-contain rounded mx-auto" />
+                                        {/* <h2 className="text-xl font-bold mt-2">{card.text}</h2> */}
 
-                                        <p className="text-gray-700">{card.description}</p>
-
-                                        {/* Ver más */}
+                                        {/* <p className="text-gray-700">{card.description}</p> */}
                                     </a>
                                 </div>
                             ))}
