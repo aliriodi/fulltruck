@@ -87,14 +87,14 @@
         }
     ],
     "brands": [
-        {"text":"Cummins","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749588241/forex/forex_academy_professional_cummins.jpg"},
-        {"text":"Ford","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749588289/forex/forex_academy_professional_ford.jpg"},
-        {"text":"Iveco","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749588645/forex/forex_academy_professional_Iveco.jpg"},
-        {"text":"Mercedes Benz","image":"url"},
-        {"text":"Renault","image":"url"},
-        {"text":"Scania","image":"url"},
-        {"text":"Volkswagen","image":"url"},
-        {"text":"Volvo","image":"url"}
+        {"text":"Cummins","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593471/forex/forex_academy_professional_cummminsv3.png"},
+        {"text":"Ford","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593603/forex/forex_academy_professional_fordv3.png"},
+        {"text":"Iveco","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593686/forex/forex_academy_professional_ivecov3.png"},
+        {"text":"Mercedes Benz","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593753/forex/forex_academy_professional_mercedesV3.png"},
+        {"text":"Renault","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749592146/forex/forex_academy_professional_Renault.png"},
+        {"text":"Scania","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749592449/forex/forex_academy_professional_scaniav2.png"},
+        {"text":"Volkswagen","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593121/forex/forex_academy_professional_volkswagen.png"},
+        {"text":"Volvo","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593249/forex/forex_academy_professional_volvo.png"}
     ],
     "clasification":[
         "clasificacion I",

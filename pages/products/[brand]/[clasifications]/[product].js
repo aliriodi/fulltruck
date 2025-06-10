@@ -71,16 +71,13 @@ export default function Curso() {
                         {data?.map((class2, index) =>
 
                             <div key={index} className="border rounded-xl p-4 shadow-md">
-                                <a
-                                    href={router.asPath + '/' + class2.id}
-                                    className="inline-block mt-2 hover:underline"
-                                >
+                               
                                     <img src={class2.image} alt={class2.title} className="w-auto h-40 object-cover rounded" />
                                     <h2 className="text-xl font-bold mt-2">{class2.title}</h2>
 
 
                                     {/* Ver más */}
-                                </a>
+                              
                             </div>
                         )
                         }
