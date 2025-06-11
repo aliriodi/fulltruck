@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Head from "next/head";
@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 function Card() {
+    function Qty(brand){
+        const matching = data.cards.filter(p => p.brand == brand);
+   return matching.length+' '
+    }
+
     return (
         <div className="bg-gray-300">
             <Head>
@@ -38,6 +43,7 @@ function Card() {
                                         className="inline-block mt-2 hover:underline"
                                     >
                                         <img src={card.image} alt={card.text}  className="w-auto h-40 object-contain rounded mx-auto" />
+                                        <h2 className="text-xl font-bold mt-2">{Qty(card.text)}Productos</h2>
                                         {/* <h2 className="text-xl font-bold mt-2">{card.text}</h2> */}
 
                                         {/* <p className="text-gray-700">{card.description}</p> */}
