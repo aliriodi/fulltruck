@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 import LoaderTruck from '../../../components/LoaderQwen';
 import cards from '../../../components/products/card.json';
 
-function Index() {
+function Clasification() {
+  // COMPONENTE DE MARCA -> CLASIFICACION
   const router = useRouter();
   const { brand } = router.query;
 
@@ -99,4 +100,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Clasification;
