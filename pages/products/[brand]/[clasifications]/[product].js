@@ -4,7 +4,7 @@ import Layout1 from '@/components/Layout1'
 import LoaderTruck from '@/components/LoaderQwen'
 import cards from '../../../../components/products/card.json';
 
-export default function Curso() {
+export default function CardDetail() {
     const router = useRouter();
     const { brand, clasifications, product } = router.query;
     const [card, setCard] = useState(null);
