@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function LoaderTruck() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[80vh]">
+    <div className="flex  items-center justify-center min-h-[80vh]">
       {/* <h2 className="text-xl font-semibold mb-4">Cargando...</h2> */}
 
       {/* Contenedor de la imagen con animación */}

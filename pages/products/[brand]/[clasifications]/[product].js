@@ -7,6 +7,7 @@ import cards from '../../../../components/products/card.json';
 export default function CardDetail() {
     const router = useRouter();
     const { brand, clasifications, product } = router.query;
+    const [imagebrand, setImagebrand] = useState('https://res.cloudinary.com/dvy9qircy/image/upload/v1749639487/forex/forex_academy_professional_camionStd.jpg');
     const [card, setCard] = useState(null);
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(null);
@@ -36,7 +37,8 @@ export default function CardDetail() {
                     card.clasification.includes(clasifications) &&
                     card.id == product);
                 //setData({ id, name: `Item ${id}` });
-
+                const imageB1 = cards.brands.filter(brand2 => brand2.text == brand)
+                setImagebrand(imageB1[0].image)
                 setData(filtered)
                 const uniqueClasifications = [
                     ...new Set(
@@ -57,12 +59,13 @@ export default function CardDetail() {
     return (
         <div>
             <Layout1>
-                <h1 className="text-3xl font-bold">{card.title}</h1>
-                <h1 className="text-black  text-3xl font-bold">{clasifications}</h1>
-                <h1 className="text-3xl font-bold">{brand}</h1>
-                <img src={card.image} alt={card.title} className="my-4 w-full max-w-md" />
-                <p>{card.description}</p>
+                
+                <p className='pt-2'>{card.description}</p>
                 {data && data[0] ? <div>
+                    <div className='flex justify-center items-center gap-16'>
+                <img src={imagebrand} alt={card.title} className="my-0 border-0 w-auto h-40 max-w-md" />
+                <h1 className="flex justify-center text-black  text-3xl font-bold">{clasifications}</h1>
+                </div>
 
                     {/* <h1>Detalle del Item</h1>
 <p>ID: {data[0].id}</p>
@@ -71,25 +74,25 @@ export default function CardDetail() {
                         {data?.map((class2, index) =>
 
                             <div key={index} className="border rounded-xl p-4 shadow-md">
-                               
-                                    <img src={class2.image} alt={class2.title} className="w-auto h-40 object-cover rounded" />
-                                    <h2 className="text-xl font-bold mt-2">{class2.title}</h2>
+
+                                <img src={class2.image[0]} alt={class2.title} className="w-auto  object-cover rounded" />
+                                <h2 className="text-xl font-bold mt-2">{class2.title}</h2>
 
 
-                                    {/* Ver más */}
-                              
+                                {/* Ver más */}
+
                             </div>
                         )
                         }
                         <div>
-                        {data[0].cardDetail}
+                            {data[0].cardDetail}
                         </div>
                     </div>
                 </div>
 
                     :
                     /**  Si no existe ninguna Card Mapeo esta */
-                    <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
+                    <div className="w-screen pr-50 h-64 border-0 flex items-center justify-center">
                         <LoaderTruck />
                     </div>}
 

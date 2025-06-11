@@ -7,7 +7,8 @@ import cards from '../../../../components/products/card.json';
 export default function Products() {
   // COMPONENTE DE MARCA -> CLASIFICACION -> PRODUCTO
   const router = useRouter();
-  const {brand, clasifications , product} = router.query;
+  const [imagebrand, setImagebrand] = useState('https://res.cloudinary.com/dvy9qircy/image/upload/v1749639487/forex/forex_academy_professional_camionStd.jpg');
+  const { brand, clasifications, product } = router.query;
   const [card, setCard] = useState(null);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
@@ -22,7 +23,7 @@ export default function Products() {
     //     setCard(found);
     //   });
 
-    if(clasifications) setCard(clasifications)
+    if (clasifications) setCard(clasifications)
 
     const fetchData = async () => {
       setLoading(true);
@@ -33,13 +34,15 @@ export default function Products() {
 
       // Simulación:
       setTimeout(() => {
-        const filtered = cards.cards.filter(card => card.brand === brand && card.clasification.includes(clasifications) );
+        const filtered = cards.cards.filter(card => card.brand === brand && card.clasification.includes(clasifications));
         //setData({ id, name: `Item ${id}` });
-        
+        //cargando Imagen de Brand o marca
+        const imageB1 = cards.brands.filter(brand2 => brand2.text == brand)
+        setImagebrand(imageB1[0].image)
         setData(filtered)
         const uniqueClasifications = [
           ...new Set(
-             filtered          
+            filtered
               .flatMap(card => card.clasification)
           )
         ];
@@ -56,41 +59,55 @@ export default function Products() {
   return (
     <div>
       <Layout1>
-      <h1 className="text-3xl font-bold">{card.title}</h1>
-      <h1 className="text-black  text-3xl font-bold">{clasifications}</h1>
-      <h1 className="text-3xl font-bold">{brand}</h1>
-      <img src={card.image} alt={card.title} className="my-4 w-full max-w-md" />
-      <p>{card.description}</p>
-     { data && data[0] ? <div>
 
-{/* <h1>Detalle del Item</h1>
-<p>ID: {data[0].id}</p>
-<p>Nombre: {data[0].title}</p> */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  {data?.map((class2, index) =>
+        {data && data[0] ? <div>
 
-    <div key={index} className="border rounded-xl p-4 shadow-md">
-      <a
-        href={router.asPath + '/' + class2.id}
-        className="inline-block mt-2 hover:underline"
-      >
-        <img src={class2.image} alt={class2.title} className="w-auto h-40 object-cover rounded" />
-        <h2 className="text-xl font-bold mt-2">{class2.title}</h2>
+          <div className="w-screen max-w-7xl mx-auto px-0 py-8">
+            {/* Imagen y título principal */}
+            <div className="flex flex-col items-center mb-8">
+              <img
+                src={imagebrand}
+                alt={brand}
+                className="w-auto h-40 object-cover rounded-lg shadow-lg"
+              />
+              <h1 className="mt-4 text-green-950 text-4xl font-extrabold tracking-tight">
+                {clasifications}
+              </h1>
+            </div>
 
+            {/* Grid de cards */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {data?.map((card, index) => (
+                <div
+                  key={index}
+                  className="border rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 "
+                >
+                  <a
+                    href={router.asPath + "/" + card.id}
+                    className="block"
+                  >
+                    <img
+                      src={card.image[0]}
+                      alt={card.title}
+                      className="w-full  object-cover rounded-md mb-4"
+                    />
+                    <h2 className="text-2xl font-semibold text-green-900 transition-colors duration-300">
+                      {card.title}
+                    </h2>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
 
-        {/* Ver más */}
-      </a>
-    </div>
-  )
-  }
-</div>
-</div>
+        </div>
 
-:
-/**  Si no existe ninguna Card Mapeo esta */
-<div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
-<LoaderTruck />
-</div>}
+          :
+          /**  Si no existe ninguna Card Mapeo esta */
+          <div className="w-screen h-64 border-0 flex items-center justify-center">
+            <LoaderTruck />
+          </div>
+        }
 
       </Layout1>
     </div>
