@@ -45,6 +45,16 @@ function Clasification() {
     fetchData();
   }, [brand]);
 
+function Lookimage(class2){
+  const imageB1 = cards.clasification.filter(clasification => clasification.text == class2)
+  console.log(imageB1.length)
+  
+   if(imageB1.length>0) {console.log(imageB1)
+    return imageB1[0].image}
+
+  
+}
+
   return (
     <Layout1>
       <div className='w-screen'>
@@ -68,7 +78,8 @@ function Clasification() {
                     href={router.asPath + '/' + class2}
                     className="inline-block mt-2 hover:underline"
                   >
-                    <img src={class2.image} alt={class2} className="w-auto h-40 object-cover rounded" />
+                    {/* <img src={class2.image} alt={class2} className="w-auto h-40 object-cover rounded" /> */}
+                    <img src={Lookimage(class2)} alt={class2} className="w-auto h-40 object-cover rounded" />
                     <h2 className="text-xl font-bold mt-2">{class2}</h2>
 
 
