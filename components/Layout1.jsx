@@ -25,13 +25,13 @@ function Layout1({ children }) {
             <div
                 className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
             >
-                <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+                <main className="flex flex-col  items-center sm:items-start">
 
-                    <div className='pt-12 text-black'>
+                    <div className='pt-12 pb-8 text-black'>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  
                     { children }
-    </div>
+    
                     </div>
                     <div className="bg-green-800">
                         <Footer /></div>

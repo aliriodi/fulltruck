@@ -45,45 +45,48 @@ function Clasification() {
     fetchData();
   }, [brand]);
 
-function Lookimage(class2){
-  let imageB1 = [];
-   imageB1 = cards.clasification.filter(clasification => clasification.text == class2)
-  //console.log(imageB1.length)
-  
-   if(imageB1.length>0 && imageB1[0].image.length>5) {return imageB1[0].image}
-   return 'https://res.cloudinary.com/dvy9qircy/image/upload/v1749639487/forex/forex_academy_professional_camionStd.jpg'
-  
-}
+  function Lookimage(class2) {
+
+    const imageB1 = cards.clasification.filter(clasification => clasification.text == class2)
+    //console.log(imageB1.length)
+
+    if (imageB1.length > 0 && imageB1[0].image.length > 5) { return imageB1[0].image }
+    return 'https://res.cloudinary.com/dvy9qircy/image/upload/v1749677049/forex/forex_academy_professional_camionstdv2.png'
+
+  }
 
   return (
-    <Layout1>
-      <div className='w-screen'>
+    <Layout1 className=''>
+      <div className="w-full px-0   ">
         {loading ? (
           /** Loading Loader  */
-          <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
+          
+          // <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
+          <div className="w-screen">
             <LoaderTruck />
           </div>
         ) :
+
           /* Segmento donde mapeo las cards si existe almenos 1 */
-          data && data[0] ? <div>
-             <img src={imagebrand} alt={brand} className="w-auto h-40 object-cover rounded mx-auto" />
+          data && data[0] ? <div className=''>
+            <img src={imagebrand} alt={brand} className="w-auto h-40 object-cover rounded mx-auto" />
             {/* <h1>Detalle del Item</h1>
             <p>ID: {data[0].id}</p>
             <p>Nombre: {data[0].title}</p> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
               {clasification?.map((class2, index) =>
 
-                <div key={index} className="border rounded-xl p-4 shadow-md">
+                <div key={index} className="hover:bg-green-300 rounded-xl p-4 shadow-md mx-auto flex flex-col items-center text-center">
                   <a
                     href={router.asPath + '/' + class2}
-                    className="inline-block mt-2 hover:underline"
+                    className="hover:underline"
                   >
-                    {/* <img src={class2.image} alt={class2} className="w-auto h-40 object-cover rounded" /> */}
-                    <img src={Lookimage(class2)} alt={class2} className="w-auto h-40 object-cover rounded" />
+                    <img
+                      src={Lookimage(class2)}
+                      alt={class2}
+                      className="w-auto h-40 object-cover rounded mx-auto"
+                    />
                     <h2 className="text-xl font-bold mt-2">{class2}</h2>
-
-
-                    {/* Ver más */}
                   </a>
                 </div>
               )
@@ -93,15 +96,15 @@ function Lookimage(class2){
 
             :
             /**  Si no existe ninguna Card Mapeo esta */
-            <div className="w-full h-64 border-0 flex flex-col items-center justify-center">
-            <img
-              src={imagebrand}
-              alt={brand}
-              className="w-auto h-40 object-cover rounded mb-14"
-            />
-             <div className="text-center text-xl font-bold">No existen productos</div>
-          </div>
-          }
+            <div className="w-screen min-h-[20rem] border-0 flex flex-col items-center justify-center">
+              <img
+                src={imagebrand}
+                alt={brand}
+                className="w-auto h-40 object-cover rounded mb-14"
+              />
+              <div className="text-center text-xl font-bold">No existen productos</div>
+            </div>
+        }
 
 
 

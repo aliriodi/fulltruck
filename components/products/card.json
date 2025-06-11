@@ -2,17 +2,17 @@
     "cards": [
         {
             "id": 0,
-            "title": "card1",
-            "description": "description card1",
+            "title": "SENSOR NIVEL REFRIG.",
+            "description": "SENSOR NIVEL REFRIGERANTE FORD VW MB SIN CABLE",
             "image": [
-                "url1",
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1749681209/forex/forex_academy_professional_sesnorFord.jpg",
                 "url2"
             ],
             "alt": "url",
-            "cardDetail": "description CardDetail1",
+            "cardDetail": "SENSOR NIVEL REFRIGERANTE FORD VW MB SIN CABLE",
             "brand": "Ford",
             "clasification": [
-                "clasificacion IV",
+                "Sensores",
                 "clasificacion II"
             ],
             "model": ""
@@ -97,8 +97,8 @@
         {"text":"Volvo","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593249/forex/forex_academy_professional_volvo.png"}
     ],
     "clasification":[
-        {"text":"clasificacion I","image":""},
-        {"text":"Bombas Agua","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749640788/forex/forex_academy_professional_bombas1.jpg"},
+        {"text":"Sensores","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749681754/forex/forex_academy_professional_sensoresstdv2.png"},
+        {"text":"Bombas Agua","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749677144/forex/forex_academy_professional_bombasaguav2.png"},
         {"text":"Mecanica","image":""},
         {"text":"Carroceria","image":""},
         {"text":"clasificacion II","image":""}

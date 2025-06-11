@@ -19,6 +19,7 @@ const Navbar = () => {
         </div>
         {console.log('linea 20 NAVBAR')}
         {console.log('https://centro-diesel.com/')}
+        {console.log('https://www.merkansas.com.ar/')}
         {/* Enlaces para pantallas grandes */}
         <ul className="hidden md:flex  justify-center space-x-6 pr-20">
         {/* <li><a href="https://centro-diesel.com/" className="hover:text-green-700"    target="_blank"
@@ -32,30 +33,33 @@ const Navbar = () => {
 
       {/* Menú desplegable en mobile */}
       {open && (
-        <div className="absolute top-16 right-2 z-50 bg-slate-300 border border-slate-400 shadow-xl rounded-md p-4 w-fit">
+       
+         <div className="absolute top-16 right-2 z-50 bg-slate-300 border border-slate-400 shadow-xl rounded-md p-4 w-fit">
+      
+
         <ul className="md:hidden space-y-2">
-          <li>
-            <a href="/#Inicio" onClick={() => setOpen(!open)} className="block hover:text-green-700">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="/products" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+           <li>
+             <a href="/#Inicio" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+               Inicio
+             </a>
+           </li>
+           <li>
+             <a href="/products" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Catalogo
             </a>
-          </li>
+         </li>
           <li>
             <a href="/#Servicios" onClick={() => setOpen(!open)} className="block hover:text-green-700">
               Servicios
-            </a>
-          </li>
-          <li>
-            <a href="/#Contacto" onClick={() => setOpen(!open)} className="block hover:text-green-700">
-              Contacto
-            </a>
-          </li>
-        </ul>
-      </div>
+           </a>
+         </li>
+         <li>
+           <a href="/#Contacto" onClick={() => setOpen(!open)} className="block hover:text-green-700">
+             Contacto
+           </a>
+         </li>
+      </ul>
+       </div>
       )}
     </nav>
   );
