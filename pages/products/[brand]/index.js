@@ -48,7 +48,7 @@ function Clasification() {
 function Lookimage(class2){
   let imageB1 = [];
    imageB1 = cards.clasification.filter(clasification => clasification.text == class2)
-  console.log(imageB1.length)
+  //console.log(imageB1.length)
   
    if(imageB1.length>0 && imageB1[0].image.length>5) {return imageB1[0].image}
    return 'https://res.cloudinary.com/dvy9qircy/image/upload/v1749639487/forex/forex_academy_professional_camionStd.jpg'
