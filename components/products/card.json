@@ -69,14 +69,14 @@
         },
         {
             "id": 4,
-            "title": "card4",
-            "description": "description card4",
+            "title": "Motor Cummins 8.3",
+            "description": "Bomba De Agua Para Ford Camiones Motor Cummins 8.3 6 Cil.",
             "image": [
-                "url1",
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1749685625/forex/forex_academy_professional_BOMBAAGUAFORD1.jpg",
                 "url2"
             ],
             "alt": "url",
-            "cardDetail": "Description CardDetail4",
+            "cardDetail": "Bomba De Agua Para Ford Camiones Motor Cummins 8.3 6 Cil.",
             "brand": "Ford",
             "clasification": [
                 "Bombas Agua",
