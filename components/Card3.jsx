@@ -17,7 +17,7 @@ function Card3() {
         {
             id: "Servicios",
             title: "Precios Competitivos:",
-            image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749507507/forex/forex_academy_professional_PreciosCompetitivosv2.jpg",
+            image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749667699/forex/forex_academy_professional_pricecompetitivev3.jpg",
             description: "Ofrecemos los mejores precios del mercado.",
         },
     ];
