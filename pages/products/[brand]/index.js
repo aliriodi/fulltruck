@@ -11,10 +11,10 @@ function Index() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
   const [clasification, setClasification] = useState(null);
-
+  const [imagebrand, setImagebrand] = useState('https://res.cloudinary.com/dvy9qircy/image/upload/v1749639487/forex/forex_academy_professional_camionStd.jpg');
   // Simulamos la carga de datos
   useEffect(() => {
-    if (!brand) return; // Si no hay id, no hacer nada
+    if (!brand) return; // Si no hay marca, no hacer nada
 
     const fetchData = async () => {
       setLoading(true);
@@ -26,6 +26,8 @@ function Index() {
       // Simulación:
       setTimeout(() => {
         const filtered = cards.cards.filter(card => card.brand === brand);
+        const imageB1 = cards.brands.filter(brand2 => brand2.text == brand)
+        setImagebrand(imageB1[0].image)
         //setData({ id, name: `Item ${id}` });
         setData(filtered)
         const uniqueClasifications = [
@@ -53,7 +55,7 @@ function Index() {
         ) :
           /* Segmento donde mapeo las cards si existe almenos 1 */
           data && data[0] ? <div>
-
+             <img src={imagebrand} alt={brand} className="w-auto h-40 object-cover rounded mx-auto" />
             {/* <h1>Detalle del Item</h1>
             <p>ID: {data[0].id}</p>
             <p>Nombre: {data[0].title}</p> */}
@@ -79,9 +81,15 @@ function Index() {
 
             :
             /**  Si no existe ninguna Card Mapeo esta */
-            <div className="w-full pr-50 h-64 border-0 flex items-center justify-center">
-              No existen productos
-            </div>}
+            <div className="w-full h-64 border-0 flex flex-col items-center justify-center">
+            <img
+              src={imagebrand}
+              alt={brand}
+              className="w-auto h-40 object-cover rounded mb-14"
+            />
+             <div className="text-center text-xl font-bold">No existen productos</div>
+          </div>
+          }
 
 
 

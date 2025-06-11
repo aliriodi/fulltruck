@@ -97,8 +97,10 @@
         {"text":"Volvo","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749593249/forex/forex_academy_professional_volvo.png"}
     ],
     "clasification":[
-        "clasificacion I",
-        "clasificacion II",
-        "clasificacion III"
+        {"text":"clasificacion I","image":""},
+        {"text":"Bombas de Agua","image":""},
+        {"text":"Mecanica","image":""},
+        {"text":"Carroceria","image":""},
+        {"text":"clasificacion II","image":""}
     ]
 }
