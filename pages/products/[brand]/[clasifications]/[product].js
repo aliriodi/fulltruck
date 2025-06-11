@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Layout1 from '@/components/Layout1'
 import LoaderTruck from '@/components/LoaderQwen'
+import Whatssapp from '@/components/Whatssapp'
 import cards from '../../../../components/products/card.json';
 
 export default function CardDetail() {
@@ -59,13 +60,13 @@ export default function CardDetail() {
     return (
         <div>
             <Layout1>
-                
+                <Whatssapp />
                 <p className='pt-2'>{card.description}</p>
                 {data && data[0] ? <div>
                     <div className='flex justify-center items-center gap-16'>
-                <img src={imagebrand} alt={card.title} className="my-0 border-0 w-auto h-40 max-w-md" />
-                <h1 className="flex justify-center text-black  text-3xl font-bold">{clasifications}</h1>
-                </div>
+                        <img src={imagebrand} alt={card.title} className="my-0 border-0 w-auto h-40 max-w-md" />
+                        <h1 className="flex justify-center text-black  text-3xl font-bold">{clasifications}</h1>
+                    </div>
 
                     {/* <h1>Detalle del Item</h1>
 <p>ID: {data[0].id}</p>

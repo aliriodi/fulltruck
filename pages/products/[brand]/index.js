@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout1 from '@/components/Layout1';
 import { useRouter } from 'next/router';
 import LoaderTruck from '../../../components/LoaderQwen';
+import Whatssapp from '@/components/Whatssapp'
 import cards from '../../../components/products/card.json';
 
 function Clasification() {
@@ -57,7 +58,7 @@ function Clasification() {
 
   return (
     <Layout1 className=''>
-      <div className="w-full px-0   ">
+      <div className="w-full px-0   "><Whatssapp/>
         {loading ? (
           /** Loading Loader  */
           
