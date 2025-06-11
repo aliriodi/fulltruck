@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Layout1 from '@/components/Layout1'
 import LoaderTruck from '@/components/LoaderQwen'
+import Whatssapp from '@/components/Whatssapp'
 import cards from '../../../../components/products/card.json';
 
 export default function Products() {
@@ -59,7 +60,7 @@ export default function Products() {
   return (
     <div>
       <Layout1>
-
+        <Whatssapp />
         {data && data[0] ? <div>
 
           <div className="w-screen max-w-7xl mx-auto px-0 py-8">
