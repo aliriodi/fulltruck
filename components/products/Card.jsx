@@ -23,9 +23,10 @@ function Card() {
     }
 
     return (
+        
         <Layout1>
         
-            <Navbar />
+            {/* <Navbar /> */}
             <div
                 className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
             >

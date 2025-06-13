@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar';
+import NavbarHours from './NavHours'
 import Footer from './Footer';
 import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -20,7 +21,7 @@ function Layout1({ children }) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
+            <NavbarHours />
             <Navbar />
             <div
                 className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
@@ -28,10 +29,10 @@ function Layout1({ children }) {
                 <main className="flex flex-col  items-center sm:items-start">
 
                     <div className='pt-12 pb-8 text-black'>
-                    
-                  
-                    { children }
-    
+
+
+                        {children}
+
                     </div>
                     <div className="bg-green-800">
                         <Footer /></div>

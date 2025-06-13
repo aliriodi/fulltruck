@@ -17,7 +17,7 @@ const locationImg = 'null';
 const movileImg = 'null';
 
   return (
-    <footer id="row-1" className="text-white bg-green-800">
+    <footer id="Servicios" className="text-white bg-green-800">
       {/* Nosotros */}
       <div className="footer-data">
         <h3> Nosotros </h3>
