@@ -53,7 +53,7 @@ const Navbar = () => {
         {console.log('https://www.dmcbombas.com.ar/')}
 
         {/* Enlaces para pantallas grandes */}
-        <ul className="hidden md:flex  justify-center space-x-6 pr-20">
+        <ul className="hidden font-extrabold md:flex  justify-center space-x-6 pr-20">
         {/* <li><a href="https://centro-diesel.com/" className="hover:text-green-700"    target="_blank"
     rel="noopener noreferrer">Centro Diesel</a></li> */}
           <li><a href="/#Inicio" className="hover:text-green-700">Inicio</a></li>
