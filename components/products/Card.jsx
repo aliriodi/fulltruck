@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Navbar';
+import Layout1 from '../Layout1'
 import Footer from '../Footer';
 import Head from "next/head";
 import data from './card.json';
@@ -22,17 +23,13 @@ function Card() {
     }
 
     return (
-        <div className="bg-gray-300">
-            <Head>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
+        <Layout1>
+        
             <Navbar />
             <div
                 className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
             >
-                <main className="flex flex-col gap-[32px] row-start-2 items-center  sm:items-start">
-
+        
                     <div className='pt-12 mx-auto text-black'>
                     <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 w-full ">
 
@@ -52,11 +49,10 @@ function Card() {
                             ))}
                         </div>
                     </div>
-                    <div className="bg-green-800">
-                        <Footer /></div>
-                </main>
+        
             </div>
-        </div>
+        
+        </Layout1>
     )
 }
 

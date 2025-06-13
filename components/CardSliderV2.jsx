@@ -4,10 +4,10 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const cards = [
   {
     id: 1,
-    title: "Calidad Garantizada:",
-    image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748722749/forex/forex_academy_professional_100QAv2.jpg",
+    title: "Envíos a todo el país:",
+    image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749846400/forex/forex_academy_professional_mapaArgentina2.jpg",
     image2: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto2.jpg",
-    description: "Trabajamos con los mejores fabricantes para asegurarnos de que obtengas solo lo mejor.",
+    description: "Trabajamos con los mejores fabricantes y aseguramos entregas rápidas, seguras y confiables donde estés. Tu camión no espera. Nosotros tampoco.",
   },
   {
     id: 2,

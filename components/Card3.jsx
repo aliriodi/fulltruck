@@ -4,9 +4,10 @@ function Card3() {
     const cards = [
         {
             id: 1,
-            title: "Calidad Garantizada:",
-            image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1748722749/forex/forex_academy_professional_100QAv2.jpg",
-            description: "Trabajamos con los mejores fabricantes para asegurarnos de que obtengas solo lo mejor.",
+            title: "Envíos a todo el país:",
+            image: "https://res.cloudinary.com/dvy9qircy/image/upload/v1749846400/forex/forex_academy_professional_mapaArgentina2.jpg",
+            description:"Aseguramos entregas rápidas, seguras y confiables donde estés. Tu camión no espera. Nosotros tampoco.",
+            description2: "Trabajamos con los mejores fabricantes para asegurarnos de que obtengas solo lo mejor.",
         },
         {
             id: 2,
@@ -24,7 +25,7 @@ function Card3() {
     return (
         <div>
             <div className='pt-6'>
-            <div className='flex   bg-green-800 text-2xl justify-center p-6 '>¿POR QUE ELEGIRNOS?</div>
+            <div className='flex  text-white bg-green-800 text-2xl justify-center p-6 '>¿POR QUE ELEGIRNOS?</div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
                 {cards.map((card) => (
