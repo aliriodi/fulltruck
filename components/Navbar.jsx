@@ -46,6 +46,7 @@ const Navbar = () => {
           </button>
         </div>
         {console.log('linea 20 NAVBAR')}
+        {console.log(getComputedStyle(document.body).getPropertyValue('font-family'))}
         {console.log('https://centro-diesel.com/')}
         {console.log('https://www.merkansas.com.ar/')}
         {console.log('https://www.dmcbombas.com.ar/')}
