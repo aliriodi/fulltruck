@@ -24,7 +24,8 @@ const geistMono = Geist_Mono({
 export default function Home() {
 
   const [powerOn, setPowerOn] = useState(false);
-
+  let image1 = 'https://res.cloudinary.com/dvy9qircy/image/upload/e_grayscale/v1749212675/forex/forex_academy_professional_foto1.jpg'
+  let image2 = 'https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto1.jpg'
   return (
     <div className="bg-gradient-to-r from-gray-300 to-green-300">
       <Head>
@@ -43,9 +44,9 @@ export default function Home() {
             
             <div id='Inicio' className="pr-6">
              <div id='ImagenBG' 
-                 className="bg-cover
-                            bg-no-repeat bg-[position:-50px_center] min-h-screen 
-                            bg-[url('https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto1.jpg')] "> 
+                className="bg-cover bg-no-repeat min-h-screen 
+                          bg-[url('https://res.cloudinary.com/dvy9qircy/image/upload/e_contrast:-90/v1749212675/forex/forex_academy_professional_foto1.jpg')] 
+                          bg-left" > 
               <div className="pt-16"></div>
               <CardSliderV2 /> 
               <PARTI />
