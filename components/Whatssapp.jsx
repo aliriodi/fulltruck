@@ -4,7 +4,7 @@ function Whatssapp() {
   return (
     <div className="fixed bottom-10 right-30 z-50">
           <a
-  href="https://wa.me/5492966382695"
+  href="https://wa.me/5493512791785"
   target="_blank"
   rel="noopener noreferrer"
 > 
