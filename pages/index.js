@@ -26,21 +26,31 @@ export default function Home() {
   const [powerOn, setPowerOn] = useState(false);
 
   return (
-    <div className="bg-gray-300">
+    <div className="bg-gradient-to-r from-gray-300 to-green-300">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <div id='Inicio'
         className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
       >
 
+        <Navbar />
+
+
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-          <Whatssapp />
-          <div id='Inicio' className="pr-6">
-            <div className="pt-16"></div>
-            <CardSliderV2 />
-            <PARTI />
+          
+            <Whatssapp />
+            
+            <div id='Inicio' className="pr-6">
+             <div id='ImagenBG' 
+                 className="bg-cover
+                            bg-no-repeat bg-[position:-50px_center] min-h-screen 
+                            bg-[url('https://res.cloudinary.com/dvy9qircy/image/upload/v1749212675/forex/forex_academy_professional_foto1.jpg')] "> 
+              <div className="pt-16"></div>
+              <CardSliderV2 /> 
+              <PARTI />
+              </div>
+             </div> 
             <CARD3 />
             {/** Button para mostrar card Slider*/}
             {/* <button
@@ -52,7 +62,7 @@ export default function Home() {
 
             {powerOn && <CardSlider />}
             <CardFACEBOOK />
-           
+
 
             {/* Ubicacion en MAPA */}
             <div className="w-full pt-8 h-[300px]">
@@ -71,7 +81,7 @@ export default function Home() {
 
               <Footer />
             </div>
-          </div>
+          
         </main>
       </div>
     </div>

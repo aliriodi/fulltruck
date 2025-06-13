@@ -1,6 +1,7 @@
 const BannerCamion = () => {
     return (
-      <div id='Inicio' className="bg-slate-100 flex flex-col-reverse md:flex-row items-center justify-between px-4 py-8 md:py-12 mt-20 rounded-lg shadow-lg max-w-7xl mx-auto">
+      <div id='Inicio' className=" bg-white/70 flex flex-col-reverse md:flex-row items-center justify-between px-4 py-8 md:py-12 mt-20 rounded-lg shadow-lg max-w-7xl mx-auto">
+        
         {/* Texto del mensaje */}
         <div className="md:pl-6  lg:pl-6 w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">
           <h2 className="text-2xl md:text-4xl font-bold text-green-950 leading-tight">
