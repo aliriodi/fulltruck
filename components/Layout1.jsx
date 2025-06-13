@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 function Layout1({ children }) {
     return (
-        <div className="bg-gradient-to-r from-gray-300 to-green-300">
+        <div className={`${geistSans.className} ${geistMono.className} bg-gradient-to-r from-gray-300 to-green-300`} >
             <Head>
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -10,6 +10,7 @@ const Navbar = () => {
    const [showTopNavbar, setShowTopNavbar] = useState(true);
 
   useEffect(() => {
+    
     function handleScroll() {
       const productsElement = document.getElementById('Servicios');
       const productsTop = productsElement?.getBoundingClientRect().top ?? Infinity;
@@ -46,6 +47,7 @@ const Navbar = () => {
           </button>
         </div>
         {console.log('linea 20 NAVBAR')}
+        
         {console.log('https://centro-diesel.com/')}
         {console.log('https://www.merkansas.com.ar/')}
         {console.log('https://www.dmcbombas.com.ar/')}
