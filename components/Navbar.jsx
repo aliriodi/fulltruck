@@ -1,11 +1,39 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { Menu, X } from "lucide-react"; // o usa íconos SVG normales si no tenés lucide-react
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  /**Para desplegue del horario y desaparezca cuando 
+   * se mueva a cierto punto de la pagina */
+
+   const [showTopNavbar, setShowTopNavbar] = useState(true);
+
+  useEffect(() => {
+    function handleScroll() {
+      const productsElement = document.getElementById('Servicios');
+      const productsTop = productsElement?.getBoundingClientRect().top ?? Infinity;
+      
+      // Si el top del elemento products está arriba de la ventana (<=0), oculto navbar
+      // Si estamos al principio de la página (scrollY = 0), muestro navbar
+      if (window.scrollY === 0) {
+        setShowTopNavbar(true);
+      } else if (productsTop <= 0) {
+        setShowTopNavbar(false);
+      } else {
+        setShowTopNavbar(true);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+/*   Fin         */
+
   return (
-    <nav className="bg-slate-300 text-green-950 fixed top-0 w-full z-50 p-4 shadow-md">
+
+       
+   <nav className={` bg-slate-300 text-green-950 fixed  w-full z-50 p-4 shadow-md  transition-all duration-300 ${showTopNavbar ? "top-10" : "top-0"}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* <div className="text-2xl font-bold">Mi Sitio</div> */}
         <div></div>
@@ -20,6 +48,8 @@ const Navbar = () => {
         {console.log('linea 20 NAVBAR')}
         {console.log('https://centro-diesel.com/')}
         {console.log('https://www.merkansas.com.ar/')}
+        {console.log('https://www.dmcbombas.com.ar/')}
+
         {/* Enlaces para pantallas grandes */}
         <ul className="hidden md:flex  justify-center space-x-6 pr-20">
         {/* <li><a href="https://centro-diesel.com/" className="hover:text-green-700"    target="_blank"
@@ -62,6 +92,7 @@ const Navbar = () => {
        </div>
       )}
     </nav>
+   
   );
 };
 

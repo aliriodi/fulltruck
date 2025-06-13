@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import NavHours from "@/components/NavHours";
 import CardFACEBOOK from "@/components/CardFACEBOOK"
 import Whatssapp from "@/components/Whatssapp";
 import PARTI from "@/components/PARTI";
@@ -34,8 +35,9 @@ export default function Home() {
       <div id='Inicio'
         className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20`}
       >
-
+        <NavHours />
         <Navbar />
+        
 
 
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -52,7 +54,7 @@ export default function Home() {
               <PARTI />
               </div>
              </div> 
-            <CARD3 />
+            <CARD3 id='products'/>
             {/** Button para mostrar card Slider*/}
             {/* <button
               onClick={() => setPowerOn(!powerOn)}
