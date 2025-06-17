@@ -58,7 +58,7 @@ export default function Home() {
               </div>
              </div> 
             <CARD3 id='products'/>
-            <Navbar2 />
+            {/* <Navbar2 /> */}
             {/** Button para mostrar card Slider*/}
             {/* <button
               onClick={() => setPowerOn(!powerOn)}
