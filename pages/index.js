@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2";
 import NavHours from "@/components/NavHours";
 import CardFACEBOOK from "@/components/CardFACEBOOK"
 import Whatssapp from "@/components/Whatssapp";
@@ -38,6 +39,7 @@ export default function Home() {
         <NavHours />
         <Navbar />
         
+        
 
 
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -51,10 +53,12 @@ export default function Home() {
                           bg-left" > 
               <div className="pt-16"></div>
               <CardSliderV2 /> 
+           
               <PARTI />
               </div>
              </div> 
             <CARD3 id='products'/>
+            <Navbar2 />
             {/** Button para mostrar card Slider*/}
             {/* <button
               onClick={() => setPowerOn(!powerOn)}
