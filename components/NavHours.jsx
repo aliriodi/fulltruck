@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function NavHours() {
     const [showTopNavbar, setShowTopNavbar] = useState(true);
@@ -33,7 +34,7 @@ function NavHours() {
                     }`}
                 style={{ zIndex: 1000 }}
             >
-                <p>Horario: Lun - Vie 9:00 - 18:00 | Calle Juan B. Justo 4874 - Córdoba Capital</p>
+                <p>Horario: Lun - Vie 9:00 - 18:00 | Calle Juan B. Justo 4874 - Córdoba Capital </p>
             </div>
 
         </div>

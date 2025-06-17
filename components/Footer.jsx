@@ -11,6 +11,7 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 
+
 export default function Footer() {
 const emailImg  = 'null';
 const locationImg = 'null';
