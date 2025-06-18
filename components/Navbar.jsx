@@ -34,14 +34,19 @@ const Navbar = () => {
   return (
 
 
-    <nav 
-      className={`bg-gradient-to-l from-gray-300 to-green-300 text-green-950 fixed  w-full z-50 p-4 shadow-md  transition-all duration-300 ${showTopNavbar ? "top-10" : "top-0"}`}
+    <nav
+      className={`bg-gradient-to-l from-gray-300 to-green-300 text-green-950 fixed  w-full z-50 p-2 shadow-md  transition-all duration-300 ${showTopNavbar ? "top-10" : "top-0"}`}
     >
       <div className="max-w-7xl  mx-auto flex justify-between items-center">
         {/* <div className="text-2xl font-bold">Mi Sitio</div> */}
         <div></div>
         {/* <img src="https://res.cloudinary.com/dvy9qircy/image/upload/v1748603385/forex/forex_academy_professional_logo2-shiva.png" alt="Logo" className="h-30 w-auto" /> */}
-        <img src="https://res.cloudinary.com/dvy9qircy/image/upload/v1750198732/forex/forex_academy_professional_bgNavbarv2.png" alt="Logo principal" className="h-20 pt-2 md:h-40 md:pt-0  w-auto object-contain mx-4" />
+        <img
+          src="https://res.cloudinary.com/dvy9qircy/image/upload/v1750198732/forex/forex_academy_professional_bgNavbarv2.png"
+          alt="Logo principal"
+          //className="h-20 pt-2 md:h-40 md:pt-0  w-auto object-contain mx-4"
+          className="h-16 pt-5 md:h-24 md:pt-3 w-auto object-contain mx-4"
+        />
         <div className="flex items-center space-x-3 text-green-900 font-semibold">
           {/* <FaPhoneAlt className="text-2xl" /> */}
           {/* <span className="text-xl ">351 897-3608</span> */}
@@ -53,7 +58,7 @@ const Navbar = () => {
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-        {console.log('linea 20 NAVBAR')}
+        {console.log('linea 56 NAVBAR')}
 
         {console.log('https://centro-diesel.com/')}
         {console.log('https://www.merkansas.com.ar/')}
