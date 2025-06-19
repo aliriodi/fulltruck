@@ -35,35 +35,33 @@
         },
         {
             "id": 2,
-            "title": "card2",
-            "description": "description card2",
+            "title": "Fiat 673",
+            "description": "Fiat 673 N, 673 NR, OM 100-120, OM 130 NC, Fiat UNIC 130 NC. Motor CP3 V32 (1972/-) ",
             "image": [
-                "url1",
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1750290475/forex/forex_academy_professional_BOMBAAGUA673.png",
                 "url2"
             ],
-            "alt": "url",
-            "cardDetail": "description CardDetail2",
+            "alt": "Bomba de agua IVECO Fiat 673",
+            "cardDetail": "Fiat 673 N, 673 NR, OM 100-120, OM 130 NC, Fiat UNIC 130 NC. Motor CP3 V32 (1972/-) ",
             "brand": "Iveco",
             "clasification": [
-                "clasificacion I",
-                "clasificacion II"
+                "Bombas Agua"
             ],
             "model": ""
         },
         {
             "id": 3,
-            "title": "card3",
-            "description": "description card3",
+            "title": "Fiat 619",
+            "description": "Fiat 619 N1/N2, 684 N, 690 N3/N4, 691 N, 693 N1/N3, 697 N, NP 180 NC, ALLIS AD 14, AD 20, FL 14 (1972/-) ",
             "image": [
-                "url1",
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1750291248/forex/forex_academy_professional_BOMBAAGUA619V2.png",
                 "url2"
             ],
-            "alt": "url",
-            "cardDetail": "description CardDetail3",
-            "brand": "Marca2",
+            "alt": "Fiat 619",
+            "cardDetail": "Fiat 619 N1/N2, 684 N, 690 N3/N4, 691 N, 693 N1/N3, 697 N, NP 180 NC, ALLIS AD 14, AD 20, FL 14 (1972/-) ",
+            "brand": "Iveco",
             "clasification": [
-                "clasificacion I",
-                "clasificacion II"
+                "Bombas Agua"
             ],
             "model": ""
         },
@@ -83,6 +81,23 @@
                 "Mecanica"
             ],
             "model": ""
+        },
+        {
+            "id": 5,
+            "title": "Motor Cummins 8.3",
+            "description": "Guardabarro Delantero Mercedes Benz 1620 1624 1633 1634 Chapa",
+            "image": [
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1750291687/forex/forex_academy_professional_MercedesB1.jpg",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "Guardabarro Delantero Mercedes Benz 1620 1624 1633 1634 Chapa",
+            "brand": "Mercedes Benz",
+            "clasification": [
+                "Carroceria",
+                "Accesorios"
+            ],
+            "model": ""
         }
     ],
     "brands": [
@@ -98,8 +113,8 @@
     "clasification":[
         {"text":"Sensores","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749681754/forex/forex_academy_professional_sensoresstdv2.png"},
         {"text":"Bombas Agua","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1749677144/forex/forex_academy_professional_bombasaguav2.png"},
-        {"text":"Mecanica","image":""},
-        {"text":"Carroceria","image":""},
-        {"text":"clasificacion II","image":""}
+        {"text":"Mecanica","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1750289978/forex/forex_academy_professional_mecanicaFulltruck.png"},
+        {"text":"Carroceria","image":"https://res.cloudinary.com/dvy9qircy/image/upload/v1750292110/forex/forex_academy_professional_carroceria.jpg"},
+        {"text":"Accesorios","image":""}
     ]
 }
