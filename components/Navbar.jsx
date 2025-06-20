@@ -42,14 +42,15 @@ const Navbar = () => {
         <div></div>
         {/* <img src="https://res.cloudinary.com/dvy9qircy/image/upload/v1748603385/forex/forex_academy_professional_logo2-shiva.png" alt="Logo" className="h-30 w-auto" /> */}
         <img
-          src="https://res.cloudinary.com/dvy9qircy/image/upload/v1750198732/forex/forex_academy_professional_bgNavbarv2.png"
+          src='https://res.cloudinary.com/dvy9qircy/image/upload/v1750457832/forex/forex_academy_professional_NavBarv5.png'
+          //src="https://res.cloudinary.com/dvy9qircy/image/upload/v1750198732/forex/forex_academy_professional_bgNavbarv2.png"
           alt="Logo principal"
           //className="h-20 pt-2 md:h-40 md:pt-0  w-auto object-contain mx-4"
-          className="h-16 pt-5 md:h-24 md:pt-3 w-auto object-contain mx-4"
+          className="h-16 pt-5 md:h-28 md:pt-3 w-auto object-contain mx-4"
         />
         <div className="flex items-center space-x-3 text-green-900 font-semibold">
-          {/* <FaPhoneAlt className="text-2xl" /> */}
-          {/* <span className="text-xl ">351 897-3608</span> */}
+          <FaPhoneAlt className="text-2xl" /> 
+           <span className="text-xl ">351 897-3608</span>
         </div>
 
         {/* Botón hamburguesa */}
