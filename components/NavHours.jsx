@@ -42,7 +42,7 @@ function NavHours() {
         }`}
         style={{ zIndex: 1000 }}
       >
-        <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+        <div className="flex flex-wrap justify-center items-center gap-4 text-lg">
           <span>Horario: Lun - Vie 9:00 - 18:00</span>
           <span>|</span>
           <span>Calle Juan B. Justo 4874 - Córdoba Capital</span>
