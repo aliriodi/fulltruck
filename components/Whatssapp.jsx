@@ -2,7 +2,7 @@ import React from 'react'
 
 function Whatssapp() {
   return (
-    <div className="fixed bottom-10 right-30 z-50">
+    <div className="fixed bottom-10 right-5 z-50">
           <a
   href="https://wa.me/5493512791785"
   target="_blank"
