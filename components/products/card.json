@@ -98,6 +98,22 @@
                 "Accesorios"
             ],
             "model": ""
+        },
+        {
+            "id": 6,
+            "title": "Faro Auxiliar Antiniebla",
+            "description": "Faro Auxiliar Antiniebla P/ Mercedes Benz 1620 1634 1938",
+            "image": [
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1750805055/forex/forex_academy_professional_faroMB.jpg",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "Faro Auxiliar Antiniebla P/ Mercedes Benz 1620 1634 1938",
+            "brand": "Mercedes Benz",
+            "clasification": [
+                "Accesorios"
+            ],
+            "model": ""
         }
     ],
     "brands": [
