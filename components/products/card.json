@@ -114,6 +114,22 @@
                 "Accesorios"
             ],
             "model": ""
+        },
+        {
+            "id": 7,
+            "title": "Puntera Derecha / Izquierda",
+            "description": "Puntera derecha izquierda  Ford Cargo",
+            "image": [
+                "https://res.cloudinary.com/dvy9qircy/image/upload/v1750975120/forex/forex_academy_professional_PunteraDerechaFord.jpg",
+                "url2"
+            ],
+            "alt": "url",
+            "cardDetail": "Puntera derecha izquierda  Ford Cargo",
+            "brand": "Ford",
+            "clasification": [
+                "Accesorios"
+            ],
+            "model": ""
         }
     ],
     "brands": [
