@@ -36,7 +36,8 @@ export default async function getAllBrands(req, res) {
     }
     else{
       // Solicitud desde el navegador
-      res.status(200).json({ message : "Acceso Denegado" });
+      //res.status(200).json({ message : "Acceso Denegado" });
+      res.status(200).json({ brands });
     }
 
   } catch (error) {
