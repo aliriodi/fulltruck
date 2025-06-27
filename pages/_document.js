@@ -13,7 +13,7 @@ export default function Document() {
         <meta property="og:image" content="https://res.cloudinary.com/dvy9qircy/image/upload/v1750457832/forex/forex_academy_professional_NavBarv5.png" />
         <meta property="og:url" content="https://fulltruck-five.vercel.app/" />
         
-        <title>Shiva Camiones</title>
+        
       </Head>
 
       <body className="antialiased overflow-x-hidden">
