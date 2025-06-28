@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from 'next/image';
 
-export default function CloudinaryUploader({ imageurl, name }) {
+export default function CloudinaryUploader({ imageurl, name , input}) {
   const [imageUrl, setImageUrl] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -23,7 +23,7 @@ export default function CloudinaryUploader({ imageurl, name }) {
       const formData = new FormData();
       formData.append('file', file);
       formData.append("upload_preset", process.env.NEXT_PUBLIC_UPLOAD_PRESET);
-      name ?formData.append('public_id', 'Shiva_Camiones_' + nombre) :null;
+      name ?formData.append('public_id', 'Shiva_Camiones_' + name) :formData.append('public_id', 'Shiva_Camiones_' + nombre);
 
       // Send the FormData to Cloudinary
       const response = await fetch("https://api.cloudinary.com/v1_1/" + process.env.NEXT_PUBLIC_CLOUDINARY_NAME + "/upload", {
@@ -55,7 +55,7 @@ export default function CloudinaryUploader({ imageurl, name }) {
         {loading ? <p>cargando....</p> : null}
         {error ? <p>{error}</p> : null}
         {imageUrl ? <Image src={imageUrl} width={300} crop={"scale"} height={100} alt='cloudinary' /> : null}
-        {name && <div className="p-4">
+        {input && <div className="p-4">
           <input
             type="text"
             value={nombre}
@@ -63,8 +63,8 @@ export default function CloudinaryUploader({ imageurl, name }) {
             onChange={handleChange}
             style={{ width: '40%', border: '1px solid #ccc', padding: '18px', borderRadius: '14px' }}
           /></div>}
-        {nombre?.length < 4 && <p style={{ width: '30%', paddingLeft: '58px', }}> minimo cuatro 4 caracteres </p>}
-        {(nombre?.length > 3 || !name) &&   <label className="inline-block cursor-pointer px-4 py-2 bg-violet-600 text-white font-semibold rounded-lg shadow hover:bg-violet-700 transition duration-300">
+        {nombre?.length < 4 && !name && <p style={{ width: '30%', paddingLeft: '58px', }}> minimo cuatro 4 caracteres </p>}
+        {(nombre?.length > 3 || name?.length>3) &&   <label className="inline-block cursor-pointer px-4 py-2 bg-violet-600 text-white font-semibold rounded-lg shadow hover:bg-violet-700 transition duration-300">
     Seleccionar imagen
     <input
       type="file"
@@ -74,7 +74,7 @@ export default function CloudinaryUploader({ imageurl, name }) {
     />
   </label>
         }
-
+   {input &&<div>{imageUrl}</div>}
       </div>
     </div>
   );

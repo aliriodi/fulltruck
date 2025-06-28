@@ -4,10 +4,28 @@ import { Schema, model, models } from 'mongoose'
 const ProductsSchema = new Schema(
   {
        
-    text: {
+    title: {
       type: String,
       },
+      description:{
+        type: String,
+      },
     image:{
+        type: String,
+      },
+     alt:{
+        type: String,
+      },
+      cardDetail:{
+        type: String,
+      },
+      brand:{
+        type: String,
+      },
+      clasification:{
+        type: []
+      },
+      model:{
         type: String,
       }
     

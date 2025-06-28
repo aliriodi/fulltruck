@@ -25,7 +25,7 @@ export default async function getAllBrands(req, res) {
 
     const brands = await Brands.find().exec();
 
-    console.log('POSTS READY TO GO!!!');
+    console.log('BRANDS READY TO GO!!!');
     
     // Verifica procedencia de solicitud 
     console.log("/////////////////////////////// ",req.headers.accept == "*/*" ? "Solicitud desde Codigo": "Solicitud desde Navegador"," ///////////////////////////////")
