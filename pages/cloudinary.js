@@ -8,8 +8,8 @@ export default function Cloudynary(){
 
     return(
      <div>
-        
-         <CLOUDYNARY  name={true}  width={"1000px"}/>
+          <CLOUDYNARY input={true}/>
+         {/* <CLOUDYNARY  name={true}  width={"1000px"}/> */}
          </div>
         
     )}
