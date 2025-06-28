@@ -6,7 +6,6 @@ export default function App({ Component, pageProps }) {
   return (
     <div>
       <Head>
-
         <title>Shiva Camiones</title>
       </Head>
 
