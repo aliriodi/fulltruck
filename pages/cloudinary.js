@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CLOUDYNARY from "../components/Cloudinary/Cloudinary"
+import CloudinaryUploader from "../components/Cloudinary/Cloudinary"
 //import Layout1 from "@/components/Layout1";
 
 export default function Cloudynary(){
@@ -8,7 +8,7 @@ export default function Cloudynary(){
 
     return(
      <div>
-          <CLOUDYNARY input={true}/>
+          <CloudinaryUploader input={true}/>
          {/* <CLOUDYNARY  name={true}  width={"1000px"}/> */}
          </div>
         
