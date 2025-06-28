@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cloudinary from "@/components/Cloudinary/Cloudinary";
+import Cloudinary from "@/components/Cloudinary/Cloudinary2";
 import Layout1 from "@/components/Layout1"
 
 export default function BrandForm() {
