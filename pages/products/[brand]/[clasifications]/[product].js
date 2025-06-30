@@ -30,10 +30,27 @@ export default function CardDetail() {
             // Aquí iría la llamada real a tu API o BD
             // Ejemplo: const res = await fetch(`/api/data/${id}`);
             // const result = await res.json();
+            const resProducts = await fetch('/api/products/get');
+        const productsData = await resProducts.json();
 
+        const filtered = productsData.product.filter(card => card.brand === brand &&
+            card.clasification.includes(clasifications) &&
+            card._id == product);
+       
+            const imageB1 = cards.brands.filter(brand2 => brand2.text == brand)
+            setImagebrand(imageB1[0].image)
+            setData(filtered)
+            const uniqueClasifications = [
+                ...new Set(
+                    filtered
+                        .flatMap(card => card.clasification)
+                )
+            ];
+            setClasification(uniqueClasifications)
+            setLoading(false);
 
             // Simulación:
-            setTimeout(() => {
+           /* setTimeout(() => {
                 const filtered = cards.cards.filter(card => card.brand === brand &&
                     card.clasification.includes(clasifications) &&
                     card.id == product);
@@ -49,7 +66,7 @@ export default function CardDetail() {
                 ];
                 setClasification(uniqueClasifications)
                 setLoading(false);
-            }, 1900);
+            }, 1900);*/
         };
 
         fetchData();

@@ -23,10 +23,26 @@ function Clasification() {
       // Aquí iría la llamada real a tu API o BD
       // Ejemplo: const res = await fetch(`/api/data/${id}`);
       // const result = await res.json();
+      const res = await fetch('/api/brands/get').then(res=> res.json())
+      const res2 = await fetch('/api/products/get').then(res=> res.json())
 
+      const filtered = res2.product.filter(card => card.brand === brand);
+      const imageB1 = res.brands.filter(brand2 => brand2.text == brand)
+
+      setImagebrand(imageB1[0].image)
+      //setData({ id, name: `Item ${id}` });
+      setData(filtered)
+      const uniqueClasifications = [
+        ...new Set(
+          filtered
+            .flatMap(card => card.clasification)
+        )
+      ];
+      setClasification(uniqueClasifications)
+      setLoading(false);
 
       // Simulación:
-      setTimeout(() => {
+    /*  setTimeout(() => {
         const filtered = cards.cards.filter(card => card.brand === brand);
         const imageB1 = cards.brands.filter(brand2 => brand2.text == brand)
         setImagebrand(imageB1[0].image)
@@ -40,12 +56,14 @@ function Clasification() {
         ];
         setClasification(uniqueClasifications)
         setLoading(false);
-      }, 1900);
+      }, 1900);*/
     };
 
     fetchData();
   }, [brand]);
 
+
+  //BUSCANDO IMAGEN EN LA CLASIFICACION HAY QUE BUSCAR EN LA BD
   function Lookimage(class2) {
 
     const imageB1 = cards.clasification.filter(clasification => clasification.text == class2)
