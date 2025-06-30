@@ -13,7 +13,7 @@ export default async function addBrands(req, res) {
       console.log('CONNECTED TO MONGO DB');
   
       console.log('CREATING BRAND');
-      console.log(req.body)
+      //console.log(req.body)
       const brand = await Brands.create(req.body)
   
       console.log('CREATED BRAND', brand);

@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
     <nav
-      className={`bg-gradient-to-l from-gray-300 to-green-300 text-green-950 fixed  w-full z-50 p-2 shadow-md  transition-all duration-300 ${showTopNavbar ? "top-8 pt-0 md:pt-14" : "top-0 pt-0"} `}
+      className={`bg-gradient-to-l from-gray-300 to-green-300 text-green-950 fixed  w-full z-50 p-2 shadow-md  transition-all duration-300 ${showTopNavbar ? "top-0 pt-0 sm:pt-14" : "top-0 pt-0"} `}
     >
       <div className="max-w-7xl  mx-auto flex justify-between items-center">
         {/* <div className="text-2xl font-bold">Mi Sitio</div> */}
