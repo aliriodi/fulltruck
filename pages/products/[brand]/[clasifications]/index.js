@@ -47,11 +47,13 @@ export default function Products() {
     fetchData();
   }, [clasifications, brand]);
 
-  if ( loading) {
+  if (loading) {
     return (
-      <div className="w-screen h-64 border-0 flex items-center justify-center">
-        <LoaderTruck />
-      </div>
+      <Layout1>
+        <div className="w-screen h-64 border-0 flex items-center justify-center">
+          <LoaderTruck />
+        </div>
+      </Layout1>
     );
   }
 
