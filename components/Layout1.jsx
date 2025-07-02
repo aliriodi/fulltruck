@@ -45,9 +45,10 @@ function Layout1({ children }) {
                         {children}
 
                     </div>
-                    <div className="bg-green-800">
-                        <Footer /></div>
+                   
                 </main>
+                <div className="bg-green-800">
+                        <Footer /></div>
             </div>
         </div>
     )

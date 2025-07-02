@@ -62,7 +62,7 @@ export default function ProductForm() {
       if (!response.ok) throw new Error("Error al guardar el producto");
 
       const data = await response.json();
-      setMessage("Producto guardado con éxito: " + FormData.title);
+      setMessage("Producto guardado con éxito: " + data.Product.title);
       setFormData({
         title: "",
         description: "",
@@ -85,7 +85,7 @@ export default function ProductForm() {
       <div className="pt-14">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 p-4 border rounded-xl shadow-md max-w-xl mx-auto"
+          className="flex flex-col gap-4 p-24 border rounded-xl shadow-md max-w-xl mx-auto"
         >
           <input
             type="text"
@@ -103,6 +103,7 @@ export default function ProductForm() {
             onChange={handleChange}
             placeholder="Descripción"
             className="input"
+            required
           />
 
           {/* <input
@@ -130,6 +131,7 @@ export default function ProductForm() {
             onChange={handleChange}
             placeholder="Marca"
             className="input"
+            required
           />
 
           <input
@@ -139,6 +141,7 @@ export default function ProductForm() {
             onChange={handleChange}
             placeholder="Clasificación (separada por coma)"
             className="input"
+            required
           />
 
           <input
@@ -148,6 +151,7 @@ export default function ProductForm() {
             onChange={handleChange}
             placeholder="Modelo"
             className="input"
+            required
           />
 
           {/* Mostrar imágenes cargadas */}
