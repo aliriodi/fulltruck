@@ -85,7 +85,9 @@ export default function ProductForm() {
       <div className="pt-14">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 p-24 border rounded-xl shadow-md max-w-xl mx-auto"
+          className="flex flex-col gap-4 p-10 border rounded-xl shadow-md max-w-4xl  mx-auto"
+
+          //className="flex flex-col gap-4 p-24 border rounded-xl shadow-md max-w-xl mx-auto"
         >
           <input
             type="text"
@@ -93,7 +95,7 @@ export default function ProductForm() {
             value={formData.title}
             onChange={handleChange}
             placeholder="Título"
-            className="input"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
             required
           />
 
@@ -102,7 +104,7 @@ export default function ProductForm() {
             value={formData.description}
             onChange={handleChange}
             placeholder="Descripción"
-            className="input"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
             required
           />
 
@@ -130,7 +132,7 @@ export default function ProductForm() {
             value={formData.brand}
             onChange={handleChange}
             placeholder="Marca"
-            className="input"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
             required
           />
 
@@ -140,7 +142,7 @@ export default function ProductForm() {
             value={formData.clasification.join(", ")}
             onChange={handleChange}
             placeholder="Clasificación (separada por coma)"
-            className="input"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
             required
           />
 
@@ -150,7 +152,7 @@ export default function ProductForm() {
             value={formData.model}
             onChange={handleChange}
             placeholder="Modelo"
-            className="input"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md"
             required
           />
 
