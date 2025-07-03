@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Cloudinary from "@/components/Cloudinary/Cloudinary2";
-import Layout1 from "@/components/Layout1"
+//import Layout1 from "@/components/Layout1"
 
 export default function BrandForm() {
   const [brandName, setBrandName] = useState("");
@@ -28,7 +28,7 @@ export default function BrandForm() {
       }
 
       const data = await response.json();
-      setMessage("Marca guardada con éxito: " + brandName);
+      setMessage("Marca guardada con éxito: " + data.brand.text);
       setBrandName(""); // limpiar campo
     } catch (error) {
       setMessage("Error: " + error.message);
@@ -38,7 +38,7 @@ export default function BrandForm() {
   };
 
   return (
-    <Layout1>
+    // <Layout1>
         <div className="pt-14">
     <form
       onSubmit={handleSubmit}
@@ -65,6 +65,6 @@ export default function BrandForm() {
       )}
     </form>
     </div>
-    </Layout1>
+    // </Layout1>
   );
 }

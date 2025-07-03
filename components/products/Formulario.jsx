@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Cloudinary from "@/components/Cloudinary/Cloudinary2";
-import Layout1 from "@/components/Layout1";
+//import Layout1 from "@/components/Layout1";
 
 export default function ProductForm() {
+  const [clasificationInput, setClasificationInput] = useState("");
+
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -52,11 +54,22 @@ export default function ProductForm() {
     setLoading(true);
     setMessage("");
 
+   // convertí la cadena a array antes de enviar
+  const clasificationArray = clasificationInput
+  .split(",")
+  .map((item) => item.trim())
+  .filter((item) => item.length > 0);
+
+const preparedFormData = {
+  ...formData,
+  clasification: clasificationArray,
+};
+
     try {
       const response = await fetch("/api/products/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(preparedFormData),
       });
 
       if (!response.ok) throw new Error("Error al guardar el producto");
@@ -73,6 +86,7 @@ export default function ProductForm() {
         clasification: [],
         model: "",
       });
+      setClasificationInput("")
     } catch (error) {
       setMessage("Error: " + error.message);
     } finally {
@@ -81,7 +95,7 @@ export default function ProductForm() {
   };
 
   return (
-    <Layout1>
+    // <Layout1>
       <div className="pt-14">
         <form
           onSubmit={handleSubmit}
@@ -139,8 +153,10 @@ export default function ProductForm() {
           <input
             type="text"
             name="clasification"
-            value={formData.clasification.join(", ")}
-            onChange={handleChange}
+           // value={formData.clasification.join(", ")}
+           value={clasificationInput}
+            //onChange={handleChange}
+            onChange={(e) => setClasificationInput(e.target.value)}
             placeholder="Clasificación (separada por coma)"
             className="w-full px-4 py-2 border border-gray-300 rounded-md"
             required
@@ -179,6 +195,6 @@ export default function ProductForm() {
           {message && <p className="text-sm mt-2 text-center text-gray-700">{message}</p>}
         </form>
       </div>
-    </Layout1>
+    // </Layout1>
   );
 }
