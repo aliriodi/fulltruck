@@ -14,6 +14,7 @@ function Clasification() {
   const [data, setData] = useState(null);
   const [clasification, setClasification] = useState(null);
   const [imagebrand, setImagebrand] = useState('https://res.cloudinary.com/dvy9qircy/image/upload/v1749639487/forex/forex_academy_professional_camionStd.jpg');
+  const [cardBD, setCardBD] = useState(null);
   // Simulamos la carga de datos
   useEffect(() => {
     if (!brand) return; // Si no hay marca, no hacer nada
@@ -25,7 +26,8 @@ function Clasification() {
       // const result = await res.json();
       const res = await fetch('/api/brands/get').then(res=> res.json())
       const res2 = await fetch('/api/products/get').then(res=> res.json())
-
+      const clas = await fetch('/api/clasification/get').then(res=> res.json())
+      setCardBD(clas)
       const filtered = res2.product.filter(card => card.brand === brand);
       const imageB1 = res.brands.filter(brand2 => brand2.text == brand)
 
@@ -65,8 +67,8 @@ function Clasification() {
 
   //BUSCANDO IMAGEN EN LA CLASIFICACION HAY QUE BUSCAR EN LA BD
   function Lookimage(class2) {
-
-    const imageB1 = cards.clasification.filter(clasification => clasification.text == class2)
+    
+    const imageB1 = cardBD.clas.filter(clasification => clasification.text == class2)
     //console.log(imageB1.length)
 
     if (imageB1.length > 0 && imageB1[0].image.length > 5) { return imageB1[0].image }
