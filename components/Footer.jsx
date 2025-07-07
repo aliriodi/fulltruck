@@ -10,7 +10,7 @@ import {
   AiFillLinkedin,
   AiFillFacebook,
 } from "react-icons/ai";
-
+import { RiAdminFill } from "react-icons/ri";
 
 export default function Footer() {
 const emailImg  = 'null';
@@ -79,14 +79,14 @@ const movileImg = 'null';
          
           </a>
         </div>
-        {/* <div className="">
-        <a  href='#facebook' className="flex items-center space-x-2">
+        <div className="">
+        <a  href='/admin' className="flex items-center space-x-2">
          
-            <AiFillLinkedin />
-            <span>Linkedin</span>
+            <RiAdminFill />
+            <span>Admin</span>
          
           </a>
-        </div> */}
+        </div> 
         {/* <div className="">
         <a  href='#facebook' className="flex items-center space-x-2">
          
