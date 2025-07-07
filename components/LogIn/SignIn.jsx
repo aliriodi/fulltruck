@@ -9,7 +9,7 @@ function SignIn({ setIsAuthenticated }) {
         const { email, password } = credentials;
       
         // Login simple, podés cambiarlo a una API real después
-        if (email === "admin@shiva.com" && password === "14640318") {
+        if (email === "admin@shiva.com" && (password === "14640318" || password === "Roldan60" )) {
           setIsAuthenticated(true);
           setLoginError("");
         } else {
