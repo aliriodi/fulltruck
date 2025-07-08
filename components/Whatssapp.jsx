@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Whatssapp() {
-
+//Definicion de evento para google Analytics
   function handleWhatsappClick() {
     //console.log("WhatsApp button clicked"); // para verificar en consola
   
