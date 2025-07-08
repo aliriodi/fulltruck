@@ -1,11 +1,28 @@
 import React from 'react'
 
 function Whatssapp() {
+
+  function handleWhatsappClick() {
+    //console.log("WhatsApp button clicked"); // para verificar en consola
+  
+    if (typeof window.gtag !== 'undefined') {
+      //console.log("gtag definifodo");
+        window.gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: 'Botón WhatsApp',
+        value: 1
+      });
+    } else {
+      console.warn("gtag no está definido");
+    }
+  }
+  
   return (
     <div className="fixed bottom-10 right-5 z-50">
           <a
   href="https://wa.me/5493512791785"
   target="_blank"
+  onClick={handleWhatsappClick}
   rel="noopener noreferrer"
 > 
 
