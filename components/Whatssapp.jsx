@@ -7,6 +7,10 @@ function Whatssapp() {
   
     if (typeof window.gtag !== 'undefined') {
       //console.log("gtag definifodo");
+      window.gtag('event', 'page_view', {
+        page_title: 'WhatsApp Click',
+        page_path: '/whatsapp',
+      });
         window.gtag('event', 'whatsapp_click', {
         event_category: 'engagement',
         event_label: 'Botón WhatsApp',
