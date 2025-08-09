@@ -24,7 +24,7 @@ function Whatssapp() {
   return (
     <div className="fixed bottom-10 right-5 z-50">
           <a
-  href="https://wa.me/5493512791785"
+  href="https://wa.me/5493518366060"
   target="_blank"
   onClick={handleWhatsappClick}
   rel="noopener noreferrer"

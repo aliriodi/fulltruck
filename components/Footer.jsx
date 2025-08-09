@@ -40,13 +40,13 @@ const movileImg = 'null';
           <a >shivatruckparts@gmail.com</a>
           </Link>
         </div>
+        {/* <div className="footer-data_item"> */}
+          {/* <Image src={movileImg} alt="Movil" /> */}
+          {/* <a >+5492966382695</a>  */}
+        {/* </div> */}
         <div className="footer-data_item">
           {/* <Image src={movileImg} alt="Movil" /> */}
-          <a >+5492966382695</a> 
-        </div>
-        <div className="footer-data_item">
-          {/* <Image src={movileImg} alt="Movil" /> */}
-          <a >+5493512791785</a>
+          <a >+54 9 3518366060</a>
         </div>
         
         <div className="footer-data_item">

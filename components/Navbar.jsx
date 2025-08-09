@@ -50,7 +50,7 @@ const Navbar = () => {
         />
         <div className="flex items-center space-x-3 text-green-900 font-semibold">
           <FaPhoneAlt className="text-2xl" /> 
-           <span className="text-xl ">351 897-3608</span>
+           <span className="text-xl ">351 836-6060</span>
         </div>
 
         {/* Botón hamburguesa */}
